@@ -1,18 +1,49 @@
 /* @import "$HOME/.config/colors/colors.css" */
-@import "../colors/colors.css";
+@import '../../.cache/wal/colors-waybar.css';
 
 @keyframes glowing {
     0% {
-        box-shadow: 0 0 30px @pink;
+        box-shadow: 0 0 5px @color4;
     }
+
+    10% {
+        box-shadow: 0 0 8px @color4;
+    }
+
     20% {
-        box-shadow: 0 0 30px @pink;
+        box-shadow: 0 0 11px @color4;
     }
+
+    30% {
+        box-shadow: 0 0 14px @color3;
+    }
+
+    40% {
+        box-shadow: 0 0 17px @color3;
+    }
+
+    50% {
+        box-shadow: 0 0 20px @color3;
+    }
+
+    60% {
+        box-shadow: 0 0 23px @color3;
+    }
+
+    70% {
+        box-shadow: 0 0 26px @color2;
+    }
+
     80% {
-        box-shadow: 0 0 30px @foreground;
+        box-shadow: 0 0 29px @color2;
     }
+
+    90% {
+        box-shadow: 0 0 32px @color2;
+    }
+
     100% {
-        box-shadow: 0 0 30px @blue;
+        box-shadow: 0 0 35px @color2;
     }
 }
 
@@ -42,7 +73,7 @@ button {
 }
 
 button:hover {
-    background-size: 60%;
+    background-size: 40%;
     animation: glowing 1s infinite alternate;
     outline-style: none;
 }

@@ -7,6 +7,7 @@
     font-family: "Mononoki Nerd Font";
     font-size: 18px;
     min-height: 0;
+    font-weight: bold;
 }
 
 window#waybar {
@@ -15,53 +16,32 @@ window#waybar {
     color: @foreground;
 }
 
-#window {
-    font-weight: bold;
-    font-family: "Mononoki";
-}
-
 #workspaces button {
     padding: 0 5px;
-    background: transparent;
     border-top: 2px solid transparent;
 }
 
 #workspaces button.focused {
-    color: @color3;
-    border-top: 2px solid @color4;
+    border-top: 2px solid @color1;
 }
 
 #custom-weather,
-#clock {
-    color: @color1;
-}
-
+#clock,
 #power-profiles-daemon,
 #cpu,
 #temperature,
-#workspaces button,
-#memory {
-    color: @color2;
-    padding: 0 3px;
-    margin: 0 2px;
-}
-
-#custom-media {
-    color: @color3;
-}
-
+#custom-media,
 #battery,
 #custom-audio,
 #custom-power,
-#mode {
-    color: @color4;
+#mode,
+#clock,
+#battery,
+#workspaces button,
+#memory {
+    padding: 0 3px;
+    margin: 0 2px;
 }
-
-#clock {
-    font-weight: bold;
-}
-
-#battery {}
 
 #battery icon {
     color: red;
@@ -71,13 +51,13 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: black;
+        background-color: @color2;
+        color: @color1;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: white;
+    color: @color1;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -86,5 +66,5 @@ window#waybar {
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    background: @color1;
 }
