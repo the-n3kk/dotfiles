@@ -1,5 +1,7 @@
 #monitors to be overriden manually
-dot-config/hypr/configs/monitors.conf
+dot-config/hypr/overrides/overrides.conf
+dot-config/ghostty/config
+dot-config/fuzzel/fuzzel.ini
 dot-config/user-*
 dot-config/dconf
 dot-config/dconf/*
