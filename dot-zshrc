@@ -1,3 +1,5 @@
+export PATH=$PATH:~/go/bin/
+
 ###########     ENV VARIABLES     ########
 # Set the root name of the plugins files (.txt and .zsh) antidote will use.
 zsh_plugins=${ZDOTDIR:-~}/.config/antidote/zsh-plugins

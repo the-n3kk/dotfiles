@@ -96,21 +96,36 @@ return {
     --  - settings (table): Override the default settings passed when initializing the server.
     --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
     local servers = {
+      -- See `:help lspconfig-all` for a list of all the pre-configured LSPs
       clangd = {},
+      pylsp = {
+        pylsp = {
+          plugins = {
+            pycodestyle = {
+              ignore = { 'W391' },
+              maxLineLength = 150,
+            },
+          },
+        },
+      },
       bashls = {
         cmd = { '/usr/bin/bash-language-server' },
       },
-      -- gopls = {},
-      -- pyright = {},
-      -- rust_analyzer = {},
-      -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
-      --
-      -- Some languages (like typescript) have entire language plugins that can be useful:
-      --    https://github.com/pmizio/typescript-tools.nvim
-      --
-      -- But for many setups, the LSP (`tsserver`) will work just fine
-      -- tsserver = {},
-      --
+
+      gopls = {},
+
+      ts_ls = {
+        settings = {
+          typescript = {
+            inlayHints = {
+              includeInlayParameterNameHints = 'all',
+              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+              includeInlayFunctionParameterTypeHints = true,
+              includeInlayVariableTypeHints = true,
+            },
+          },
+        },
+      },
 
       zls = {
         cmd = { '/usr/bin/zls' },
@@ -132,6 +147,9 @@ return {
               library = {
                 '${3rd}/luv/library',
                 unpack(vim.api.nvim_get_runtime_file('', true)),
+              },
+              diagnostics = {
+                globals = { 'vim' },
               },
             },
             completion = {

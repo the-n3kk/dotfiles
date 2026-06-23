@@ -1,45 +1,41 @@
-vim.g.mapleader = ' '
-vim.o.winborder = 'rounded'
-vim.g.maplocalleader = ' '
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.signcolumn = 'yes'
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
-vim.opt.tabstop = 8
-vim.opt.breakindent = true
-vim.opt.undofile = true
+vim.g.mapleader = ' ' --global leader key
+vim.g.maplocalleader = ' ' --local leader key
 
--- Don't show the mode, since it's already in status line
-vim.opt.showmode = false
+vim.o.winborder = 'rounded' --rounded floating window borders
 
--- Sync clipboard between OS and Neovim.
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.number = true --show absolute line numbers
+vim.opt.relativenumber = true --show relative line numbers
+vim.opt.signcolumn = 'yes' --always show sign column
 
--- Case-insensitive searching UNLESS \C or capital in search
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
+vim.opt.shiftwidth = 4 --autoindent width
+vim.opt.softtabstop = 4 --tab/backspace behave as 4 spaces
+vim.opt.tabstop = 4 --display tab characters as 4 spaces
+vim.opt.expandtab = true --insert spaces instead of tabs
 
--- Decrease update time
-vim.opt.updatetime = 250
-vim.opt.timeoutlen = 300
+vim.opt.breakindent = true --preserve indentation on wrapped lines
+vim.opt.undofile = true --persistent undo history
 
--- Configure how new splits should be opened
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+vim.opt.showmode = false --hide mode since statusline shows it
 
--- Sets how neovim will display certain whitespace in the editor.
-vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.clipboard = 'unnamedplus' --sync clipboard with OS
 
--- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
+vim.opt.ignorecase = true --case-insensitive search
+vim.opt.smartcase = true --case-sensitive if uppercase used
 
--- Show which line your cursor is on
-vim.opt.cursorline = true
+vim.opt.updatetime = 250 --faster update events
+vim.opt.timeoutlen = 300 --mapped sequence timeout
 
--- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.splitright = true --vertical splits open right
+vim.opt.splitbelow = true --horizontal splits open below
+
+vim.opt.list = true --show invisible whitespace characters
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' } --whitespace symbols
+
+vim.opt.inccommand = 'split' --live preview substitutions
+
+vim.opt.cursorline = true --highlight current line
+
+vim.opt.scrolloff = 10 --minimum lines around cursor
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
