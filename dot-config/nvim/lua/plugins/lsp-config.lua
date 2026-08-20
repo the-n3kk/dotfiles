@@ -98,16 +98,19 @@ return {
     local servers = {
       -- See `:help lspconfig-all` for a list of all the pre-configured LSPs
       clangd = {},
-      pylsp = {
-        pylsp = {
-          plugins = {
-            pycodestyle = {
-              ignore = { 'W391' },
-              maxLineLength = 150,
-            },
+
+      basedpyright = {
+        analysis = {
+          useLibraryCodeForTypes = true,
+          autoSearchPaths = true,
+          diagnosticMode = 'openFilesOnly',
+          typeCheckingMode = 'basic',
+          inlayHints = {
+            callArgumentNames = true,
           },
         },
       },
+
       bashls = {
         cmd = { '/usr/bin/bash-language-server' },
       },

@@ -88,8 +88,12 @@ eval "$(zoxide init --cmd cd zsh)"
 
 
 ###########     Aliases     ########
+alias ipair='idevicepair pair'
+alias imusic='ifuse --documents com.btrlabs.btramp $HOME/iphone'
+alias isync='rsync -r --fsync --progress --human-readable --delete --size-only Music/ iphone/'
+
 alias rd='ripdrag *'
-alias ls='eza --icons=always -1'
+alias eza='eza --icons=always -1'
 alias update_all='sudo pacman -Syu;paru -Syu;flatpak update;antidote update'
 alias open='f() { xdg-open $1 >/dev/null &};f'
 alias poe2exchange="~/.local/bin/Exiled-Exchange.AppImage --no-overlay </dev/null &>/dev/null &; sleep 2; netstat -tunlp | grep exiled | tr \":\" \"\\t\" | awk '{x=\"/var/lib/flatpak/exports/bin/app.zen_browser.zen localhost:\"\$5; system(x)}'"
