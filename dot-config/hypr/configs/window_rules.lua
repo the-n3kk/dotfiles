@@ -65,7 +65,7 @@ hl.window_rule({
 	no_anim = true,
 	pin = true,
 	float = true,
-	fullscreen_state = true,
+	fullscreen = false,
 	move = "0 0",
 	match = { class = "steam_app_3058630" },
 })

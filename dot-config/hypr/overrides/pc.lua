@@ -34,19 +34,19 @@ hl.monitor({
 })
 
 hl.workspace_rule({
-	workspace = 1, 
-	monitor = "DP-2",  
-	default = true
-)}
+	workspace = 1,
+	monitor = "DP-2",
+	default = true,
+})
 
 hl.workspace_rule({
-	workspace = 2, 
-	monitor = "DP-1",  
-	default = true
-)}
+	workspace = 2,
+	monitor = "DP-1",
+	default = true,
+})
 
 hl.config({
 	input = {
-		sensitivity = -0.5 -- -1.0 to 1.0, 0 means no modification.
-	}
+		sensitivity = -0.5, -- -1.0 to 1.0, 0 means no modification.
+	},
 })
