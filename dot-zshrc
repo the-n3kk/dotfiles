@@ -90,7 +90,7 @@ eval "$(zoxide init --cmd cd zsh)"
 ###########     Aliases     ########
 alias ipair='idevicepair pair'
 alias imusic='ifuse --documents com.btrlabs.btramp $HOME/iphone'
-alias isync='rsync -r --fsync --progress --human-readable --delete --size-only Music/ iphone/'
+alias isync='rsync -r --fsync --progress --human-readable --delete --size-only $HOME/Music/ $HOME/iphone/'
 
 alias rd='ripdrag *'
 alias eza='eza --icons=always -1'

@@ -7,7 +7,7 @@ on-button-left=dismiss
 on-button-middle=none
 on-button-right=dismiss-all
 on-touch=dismiss
-on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga --volume=30
 
 # STYLE OPTIONS
 font="Mononoki Nerd Font", 8
@@ -30,6 +30,25 @@ max-visible=5
 layer=overlay
 anchor=top-right
 
-background-color=#002B36
-text-color=#BBDEFB
-border-color=#BBDEFB
+background-color=#B37A89
+text-color=#CC7787
+
+[urgency=low]
+border-color=#CC7787
+background-color=#AE898D
+text-color=#E6BFBF
+
+[urgency=normal]
+border-color=#B37A89
+background-color=#9D8F99
+text-color=#DDA5AA
+default-timeout=10000
+ignore-timeout=1
+
+[urgency=high]
+font="Mononoki Nerd Font", 14
+border-color=#B37A89
+background-color=#CC7787
+text-color=#E6BFBF
+default-timeout=0
+ignore-timeout=1

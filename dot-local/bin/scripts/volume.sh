@@ -30,7 +30,7 @@ get_volume_with_icon(){
 
 # Get Volume
 get_volume() {
-    pamixer --get-volume "$(get_sink)"
+    pamixer --get-volume --sink "$(get_sink)"
 }
 
 
@@ -41,12 +41,12 @@ notify_user() {
 
 # Increase Volume
 inc_volume() {
-    pamixer --sink "$(get_sink)" -i 5 && notify_user
+    pamixer --sink "$(get_sink)" -i 1 && notify_user
 }
 
 # Decrease Volume
 dec_volume() {
-    pamixer --sink "$(get_sink)" -d 5 && notify_user
+    pamixer --sink "$(get_sink)" -d 1 && notify_user
 }
 
 # Toggle Mute
