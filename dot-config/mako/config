@@ -1,22 +1,23 @@
 # GLOBAL
-max-history=10
+max-history=5
 sort=-time
 
 # BINDING OPTIONS
 on-button-left=dismiss
-on-button-middle=none
+on-button-middle=dismiss
 on-button-right=dismiss-all
 on-touch=dismiss
 on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga --volume=30
 
 # STYLE OPTIONS
 font="Mononoki Nerd Font", 8
+format=<b>%a ⏵</b> %s\n%b
 width=200
 height=80
 margin=3
 padding=10
 border-size=1
-border-radius=12
+border-radius=5
 icons=1
 max-icon-size=48
 icon-location=left
@@ -30,25 +31,25 @@ max-visible=5
 layer=overlay
 anchor=top-right
 
-background-color=#B37A89
-text-color=#CC7787
+background-color=#DB1710
+text-color=#AE635E
 
 [urgency=low]
-border-color=#CC7787
-background-color=#AE898D
-text-color=#E6BFBF
+border-color=#AE635E
+background-color=#A29FA1
+text-color=#CECECE
 
 [urgency=normal]
-border-color=#B37A89
-background-color=#9D8F99
-text-color=#DDA5AA
+border-color=#DB1710
+background-color=#838482
+text-color=#C7BBB8
 default-timeout=10000
 ignore-timeout=1
 
 [urgency=high]
 font="Mononoki Nerd Font", 14
-border-color=#B37A89
-background-color=#CC7787
-text-color=#E6BFBF
+border-color=#DB1710
+background-color=#AE635E
+text-color=#CECECE
 default-timeout=0
 ignore-timeout=1

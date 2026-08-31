@@ -15,7 +15,7 @@ hl.monitor({
 	sdrbrightness = 1,
 	sdrsaturation = 1,
 	sdr_eotf = "srgb",
-	--icc = /usr/share/color/icc/colord/AppleRGB.icc
+	icc = "/usr/share/color/icc/colord/AppleRGB.icc",
 })
 
 hl.monitor({
@@ -30,7 +30,7 @@ hl.monitor({
 	sdrbrightness = 1,
 	sdrsaturation = 1,
 	sdr_eotf = "srgb",
-	--icc = /usr/share/color/icc/colord/AppleRGB.icc
+	icc = "/usr/share/color/icc/colord/AppleRGB.icc",
 })
 
 hl.workspace_rule({
