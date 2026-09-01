@@ -56,27 +56,8 @@ max-visible=5
 layer=overlay
 anchor=top-right
 
-background-color=${color1}
-text-color=${color2}
-
-[urgency=low]
-border-color=${color2}
-background-color=${color4}
-text-color=${color6}
-
-[urgency=normal]
-border-color=${color1}
-background-color=${color3}
-text-color=${color5}
-default-timeout=10000
-ignore-timeout=1
-
-[urgency=high]
-font="Mononoki Nerd Font", 14
-border-color=${color1}
-background-color=${color2}
-text-color=${color6}
-default-timeout=0
-ignore-timeout=1
+background-color=${background}
+border-color=${color3}
+text-color=${foreground}
 EOF
 $MAKOCTL  reload
