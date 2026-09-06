@@ -38,7 +38,7 @@ return {
     },
     formatters = {
       css_fmt = {
-        command = 'css-beautify',
+        command = 'biome',
       },
       cs_fmt = {
         command = 'dotnet',

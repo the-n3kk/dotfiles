@@ -1,1 +1,1 @@
-pc.lua
+/home/n3kk/.config/hypr/overrides/pc.lua

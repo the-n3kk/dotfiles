@@ -1,14 +1,13 @@
 #monitors to be overriden manually
-dot-config/hypr/overrides/overrides.conf
-dot-config/ghostty/config
-dot-config/fuzzel/fuzzel.ini
 dot-config/user-*
 dot-config/dconf
 dot-config/dconf/*
 dot-config/deluge
+dot-config/vesktop
+dot-config/wlogout/icons/
 
 dot-config/thefuck/__pycache__
 dot-local/bin/Exiled-Exchange.AppImage
 dot-local/bin/Bambu_Studio.AppImage
-
+dot-config/antidote/zsh-plugins.zsh
 dot-config/easyeffects/autoload

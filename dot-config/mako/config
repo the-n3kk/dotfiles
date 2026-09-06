@@ -31,25 +31,6 @@ max-visible=5
 layer=overlay
 anchor=top-right
 
-background-color=#DB1710
-text-color=#AE635E
-
-[urgency=low]
-border-color=#AE635E
-background-color=#A29FA1
-text-color=#CECECE
-
-[urgency=normal]
-border-color=#DB1710
-background-color=#838482
-text-color=#C7BBB8
-default-timeout=10000
-ignore-timeout=1
-
-[urgency=high]
-font="Mononoki Nerd Font", 14
-border-color=#DB1710
-background-color=#AE635E
-text-color=#CECECE
-default-timeout=0
-ignore-timeout=1
+background-color=#09090B
+border-color=#BA1620
+text-color=#d3d0d6
