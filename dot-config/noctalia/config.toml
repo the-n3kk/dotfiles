@@ -2,13 +2,13 @@
 ui_scale = 1.20
 
 [bar.default]
-start = ["power_profile", "caffeine", "audio_visualizer", "media"]
+start = ["media", "audio_visualizer"]
 center = ["clock", "weather"]
 concave_edge_corners = true
 end = [
-  "spacer_1",
   "tray",
-  "group:g1",
+  "spacer_1",
+  #"group:g1",
   "privacy",
   "battery",
   "bluetooth",
