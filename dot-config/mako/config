@@ -31,6 +31,6 @@ max-visible=5
 layer=overlay
 anchor=top-right
 
-background-color=#09090B
-border-color=#BA1620
-text-color=#d3d0d6
+background-color=#0f171e
+border-color=#BBC7DB
+text-color=#e4e8ee

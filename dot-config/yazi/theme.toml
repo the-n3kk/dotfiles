@@ -86,3 +86,7 @@ desc = { fg = "#ffffff" }
 mask = { bg = "#3c4048" }
 rest = { fg = "#ff5ef1" }
 separator_style = { fg = "#7b8496" }
+
+[flavor]
+dark = "noctalia"
+light = "noctalia"
